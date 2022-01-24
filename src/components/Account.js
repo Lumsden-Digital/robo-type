@@ -89,7 +89,7 @@ export default function Account({ session }) {
             handleChange={(e) => setWebsite(e.target.value)}
             placeholder="Website"
           />        
-        </div>
+        </div>        
         <div className="mx-auto border-2 border-gray-200 w-6/12 text-center mt-4">
           <button
             className=" text-gray-200"

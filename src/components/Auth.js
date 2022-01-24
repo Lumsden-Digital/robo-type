@@ -26,6 +26,11 @@ export default function Auth() {
     }
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    handleLogin(email)
+  }
+
   return (
     // <div className="row flex flex-center">
     //   <div className="col-6 form-widget">
@@ -53,9 +58,10 @@ export default function Auth() {
           handleChange={handleChange}
           typingArea={typingArea}
           disableInput={false}
-          handleSubmit={handleLogin}
+          handleSubmit={handleSubmit}
           placeholder="your email"
-          icon="submit"
+          loading={loading}
+          icon="magicLink"
         />
     </div>
   )
